@@ -2,11 +2,29 @@
     margin: 0;
 }
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.heading{
+p, button {
+    margin: 15px 0;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+h3,h2 {
+    color: hsl(243, 87%, 12%);
+}
+
+h2 {
+    margin: 30px 0;
+}
+
+div.card p {
+    color: hsl(0, 0%, 50%);
+}
+
+.heading {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: white;
@@ -15,14 +33,10 @@ body{
 
 h2 {
     font-weight: 700;
-} 
+}
 
 h3 {
     font-weight: 700;
-}
-
-p {
-    font-weight: 400;
 }
 
 img {
@@ -46,27 +60,50 @@ header ul {
     right: 0;
     padding: 40px;
 }
-header li{
+
+header li {
     display: inline;
     margin: 0 10px;
 }
 
 .content {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.col-6 {
-    width: 49.5%;
+.col-6, .col-5, .col-4, .col-3 {
+    width: 100%;
     position: relative;
     display: inline-block;
 }
 
-.col-4 {
-    width: 33%;
-    position: relative;
-    display: inline-block;
+@media (min-width: 992px){
+    .col-6 {
+        width: 49.5%;
+        position: relative;
+        display: inline-block;
+    }
+
+    .col-5 {
+        width: 41%;
+        position: relative;
+        display: inline-block;
+    }
+
+    .col-3 {
+        width: 25%;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .col-4 {
+        width: 33%;
+        position: relative;
+        display: inline-block;
+    }
 }
+
+
 
 #hero-image {
     display: inline-block;
@@ -74,7 +111,7 @@ header li{
     margin: auto auto auto 0;
 }
 
-.toppage-content{
+.toppage-content {
     padding: 0 0 0 30px;
     margin: auto 0;
 }
@@ -83,20 +120,8 @@ header li{
     text-align: center;
 }
 
-.card{
+.card {
     padding: 20px 60px;
-}
-
-.col-3 {
-    width: 25%;
-    position: relative;
-    display: inline-block;
-}
-
-.col-5 {
-    width: 41%;
-    position: relative;
-    display: inline-block;
 }
 
 .footer-sm-col {
@@ -105,14 +130,43 @@ header li{
     display: inline-block;
 }
 
-
-.center{
-    margin-left:auto;
+.center {
+    margin-left: auto;
     margin-right: auto;
     display: block;
 }
 
-footer{
+footer {
     background-color: hsl(243, 87%, 12%);
     color: white;
+}
+
+button {
+    background-color: hsl(163, 95%, 43%);
+    color: white;
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.bg-bt {
+    padding: 16px 48px;
+    font-size: 16px;
+}
+
+.sm-bt {
+    padding: 12px 48px;
+    font-size: 12px;
+}
+
+input {
+    background-color: white;
+    display: inline-block;
+    border: none;
+    padding: 12px 48px;
+    font-size: 12px;
+    box-shadow: 0px 0px 5px #888;
+    text-decoration: none;
+    border-radius: 4px;
 }
