@@ -2,8 +2,18 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    list-style-type: none;
+    font-size: 11px;
 }
 
 p, button {
@@ -12,7 +22,7 @@ p, button {
     font-weight: 600;
 }
 
-h3,h2 {
+h3, h2 {
     color: hsl(243, 87%, 12%);
 }
 
@@ -71,39 +81,48 @@ header li {
     padding-bottom: 30px;
 }
 
+.row {
+    display: block;
+}
+
 .col-6, .col-5, .col-4, .col-3 {
     width: 100%;
     position: relative;
-    display: inline-block;
+    padding: 30px;
 }
 
-@media (min-width: 992px){
+@media (min-width: 768px) {
+
+    .border {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
+
+    .row{
+       display: flex; 
+    }
+    
+    .col-6, .col-5, .col-4, .col-3 {
+        position: relative;
+    }
+
     .col-6 {
-        width: 49.5%;
+        width: 50%;
         position: relative;
-        display: inline-block;
     }
-
     .col-5 {
-        width: 41%;
+        width: 41.6%;
         position: relative;
-        display: inline-block;
     }
-
     .col-3 {
         width: 25%;
         position: relative;
-        display: inline-block;
     }
-    
     .col-4 {
         width: 33%;
         position: relative;
-        display: inline-block;
     }
 }
-
-
 
 #hero-image {
     display: inline-block;
@@ -120,14 +139,14 @@ header li {
     text-align: center;
 }
 
-.card {
-    padding: 20px 60px;
+.center-justify{
+    justify-content: center;
 }
+
 
 .footer-sm-col {
     width: 30%;
     position: relative;
-    display: inline-block;
 }
 
 .center {
@@ -141,7 +160,9 @@ footer {
     color: white;
 }
 
-button {
+.bg-bt {
+    padding: 16px 48px;
+    font-size: 16px;
     background-color: hsl(163, 95%, 43%);
     color: white;
     display: inline-block;
@@ -150,14 +171,15 @@ button {
     border-radius: 4px;
 }
 
-.bg-bt {
-    padding: 16px 48px;
-    font-size: 16px;
-}
-
 .sm-bt {
     padding: 12px 48px;
     font-size: 12px;
+    background-color: hsl(163, 95%, 43%);
+    color: white;
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    border-radius: 4px;
 }
 
 input {
@@ -170,3 +192,4 @@ input {
     text-decoration: none;
     border-radius: 4px;
 }
+

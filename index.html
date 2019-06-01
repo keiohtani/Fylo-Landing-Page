@@ -29,11 +29,11 @@
     <header>
       <img src="images/logo.svg" alt="" class='header-logo'>
       <ul class='header'>
-        <li>Sign In</li>
-        <li>Sign Up</li>
+        <li><a href="">Sign In</a></li>
+        <li><a href="" class="sm-bt">Sign Up</a></li>
       </ul>
     </header>
-    <div class="content">
+    <div class="row content">
       <div class='col-6'>
         <div class='toppage-content'>
           <h1>All Your Files In One Secure Location, Accessible Anywhere.</h1>
@@ -49,42 +49,44 @@
   <div class="content">
     <h2 class='center-align'>Stay Productive, Wherever You Are</h2>
 
-    <div class='col-4'>
-      <img src="images/illustration-features.svg" id='feature-image' width='300px'>
-    </div>
-    <div class='col-4'>
-      <div class='card'>
-        <h3>All platforms, all devices, all your files</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-          egestas, elit sit amet fermentum viverra, ipsum dolor vehicula
-          leo, ac accumsan magna tellus sed leo.</p>
+    <div class="row">
+      <div class='col-4'>
+        <img src="images/illustration-features.svg" id='feature-image' width='300px'>
       </div>
-      <div class='card'>
-        <h3>Security you can trust</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-          egestas, elit sit amet fermentum viverra, ipsum dolor vehicula
-          leo, ac accumsan magna tellus sed leo.</p>
+      <div class='col-4'>
+        <div class='card'>
+          <h3>All platforms, all devices, all your files</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            egestas, elit sit amet fermentum viverra, ipsum dolor vehicula
+            leo, ac accumsan magna tellus sed leo.</p>
+        </div>
+        <div class='card'>
+          <h3>Security you can trust</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            egestas, elit sit amet fermentum viverra, ipsum dolor vehicula
+            leo, ac accumsan magna tellus sed leo.</p>
+        </div>
       </div>
-    </div>
-    <div class='col-4'>
-      <div class='card'>
-        <h3>Real-time collaboration</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-          egestas, elit sit amet fermentum viverra, ipsum dolor vehicula
-          leo, ac accumsan magna tellus sed leo.</p>
-      </div>
-      <div class='card'>
-        <h3>Automatic backups</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-          egestas, elit sit amet fermentum viverra, ipsum dolor vehicula
-          leo, ac accumsan magna tellus sed leo.</p>
+      <div class='col-4'>
+        <div class='card'>
+          <h3>Real-time collaboration</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            egestas, elit sit amet fermentum viverra, ipsum dolor vehicula
+            leo, ac accumsan magna tellus sed leo.</p>
+        </div>
+        <div class='card'>
+          <h3>Automatic backups</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            egestas, elit sit amet fermentum viverra, ipsum dolor vehicula
+            leo, ac accumsan magna tellus sed leo.</p>
+        </div>
       </div>
     </div>
   </div>
   <div>
-    <div class='center col-6 center-align content'>
+    <div class='center col-6 center-align content row'>
       <h2>Get Early Access Today</h2>
-      <p>It only takes a minute to sign up and our free starter tier is extremely
+      <p style='color: hsl(243, 58%, 33%)'>It only takes a minute to sign up and our free starter tier is extremely
         generous. If you have any questions, our support team would be happy to
         help you.</p>
       <input type="email" placeholder="email@example.com">
@@ -92,13 +94,18 @@
     </div>
   </div>
 
-  <footer class="content">
-    <div class="col-3">
+  <footer class="content row">
+    <div class="col-3" style="order: 1;">
       <img src="images/logo.svg" alt="">
       <p> <img src="images/icon-phone.svg" alt=""> Phone: +1-543-123-4567</p>
       <p> <img src="images/icon-email.svg" alt=""> example@fylo.com</p>
     </div>
-    <div class="col-5">
+    <div class="col-4" style="order: 3;">
+      <p>Receive updates from us, including tips and tricks on how to improve your workflow.</p>
+      <input type="email">
+      <button class="sm-bt">Join</button>
+    </div>
+    <div class="col-5 row border center-justify" style='order: 2;'>
       <div class='footer-sm-col'>
         <h4>Fylo</h4>
         <ul>
@@ -125,11 +132,6 @@
           <li>Privacy</li>
         </ul>
       </div>
-    </div>
-    <div class="col-4">
-      <p>Receive updates from us, including tips and tricks on how to improve your workflow.</p>
-      <input type="email">
-      <button class="sm-bt">Join</button>
     </div>
   </footer>
 </body>
